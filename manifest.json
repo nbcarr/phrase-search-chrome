@@ -3,13 +3,16 @@
     "name": "Search Highlighted Phrase",
     "version": "1.0",
     "description": "Allows users to search YouTube with a highlighted phrase.",
-    "permissions": ["contextMenus", "activeTab"],
+    "permissions": ["contextMenus", "storage"],
     "background": {
       "service_worker": "background.js"
     },
     "icons": {
       "16": "images/search-16.png",
       "128": "images/search-128.png"
+    },
+    "action": {
+      "default_popup": "popup.html"
     }
   }
   
